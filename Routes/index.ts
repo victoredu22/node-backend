@@ -13,9 +13,7 @@ import { body, param, query, validationResult } from "express-validator";
 const router = Router();
 
 
-router.get('/', (req: Request, res: Response) => {
-  res.send('Code with Rico. Ready to run on Heroku.');
-});
+
 
 // router.post(
 //   "/user",
