@@ -1,4 +1,5 @@
 import mongoose, { ConnectOptions } from "mongoose";
+import {config} from "./config";
 
 type DBInput = {
   db: string;
@@ -7,7 +8,7 @@ export default () => {
   const connect = () => {
     mongoose
       .connect(
-        `mongodb+srv://victoredu22:Cz3mRMI1M7ayxSjW@cluster0.3xcjkc4.mongodb.net/db`,
+        `mongodb+srv://${config.server.mongo_username}:${config.server.mongo_password}@cluster0.3xcjkc4.mongodb.net/${config.server.mongo_db}`,
         {
           useNewUrlParser: true,
           useUnifiedTopology: true,

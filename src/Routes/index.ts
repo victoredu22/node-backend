@@ -13,7 +13,7 @@ import PayeeController from "../Controllers/Payee.controller";
 const router = Router();
 
 router.get("/", (req: Request, res: Response) => {
-  res.send("Code with Rico. Ready to run on Herok44444444444.");
+  res.send("api sucess!.");
 });
 
 router.post(
