@@ -13,7 +13,7 @@ import PayeeController from "../Controllers/Payee.controller";
 const router = Router();
 
 router.get("/", (req: Request, res: Response) => {
-  res.send("api sucess!.");
+  res.send("api success!.");
 });
 
 router.post(
@@ -21,7 +21,7 @@ router.post(
   validate(validateUser.validateCreate),
   UserController.CreateUser
 );
-router.get("/user", UserController.Index);
+
 
 router.post(
   "/payees",
