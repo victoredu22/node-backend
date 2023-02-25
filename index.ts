@@ -3,12 +3,15 @@ import {config} from "./config";
 import cors = require("cors");
 import bodyParser from "body-parser";
 import routes from "./Routes/index";
+import connect from "./connect";
 
 const app: Express = express();
 app.use(cors<Request>());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+connect();
+
 
 app.use("/api", routes);
 
