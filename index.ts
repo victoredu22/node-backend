@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import {config} from "./config";
 import cors = require("cors");
 import bodyParser from "body-parser";
-import routes from "./Routes/index";
+import routes from "./src/Routes/index";
 import connect from "./connect";
 
 const app: Express = express();
